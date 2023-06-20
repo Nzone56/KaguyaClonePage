@@ -1,5 +1,8 @@
-.html {
+:root {
    font-size: 62.5%;
+}
+
+html {
    box-sizing: border-box;
    margin: 0;
    border: 0;
