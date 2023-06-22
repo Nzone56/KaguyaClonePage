@@ -1,8 +1,27 @@
 import { Box } from '@mui/material'
 import { BubbleArea } from './BubbleArea'
 import { NewsPreview } from './NewsPreview'
+import { useEffect, useState } from 'react'
 
 export const Main = () => {
+   const [scrollDistance, setScrollDistance] = useState(0)
+   const maxScrollDistance = 70
+
+   useEffect(() => {
+      const handleScroll = () => {
+         const scrollTop = window.scrollY || document.documentElement.scrollTop
+         setScrollDistance(scrollTop)
+      }
+
+      window.addEventListener('scroll', handleScroll)
+
+      return () => {
+         window.removeEventListener('scroll', handleScroll)
+      }
+   }, [])
+
+   const transformValue =
+      scrollDistance <= maxScrollDistance ? `${scrollDistance / 2}px` : '35px'
    return (
       <Box
          sx={{
@@ -18,15 +37,26 @@ export const Main = () => {
                width: '100%',
                minHeight: '980px',
                overflow: 'hidden',
-               backgroundImage:
-                  'url(../../src/assets/FirstSeason/img_main.jpg)',
-               backgroundSize: '100% auto',
-               backgroundPosition: '100% -23rem',
-               backgroundRepeat: 'no-repeat',
-               // transform: 'translateY(-5px)',
             }}
-            //TODO: ANIMATION FROM SCROLLING DOWN
          >
+            {/* FONDO PRINCIPAL  */}
+            <Box
+               sx={{
+                  position: 'absolute',
+                  top: '-153.6px',
+                  left: '0',
+                  width: '100%',
+                  height: '300%',
+                  backgroundImage:
+                     'url(../../src/assets/FirstSeason/img_main.jpg)',
+                  backgroundSize: '100% auto',
+                  backgroundRepeat: 'no-repeat',
+                  transition: 'transform .7s ease-out, top 1.5s ease-out .7s',
+                  transform: `translateY(${transformValue})`,
+                  //TODO: ANIMATION FROM SCROLLING DOWN SLOW DOWN, MORE HEIGHT
+               }}
+            />
+            {/* POP UP SECOND SEASON  */}
             <Box
                sx={{
                   maxWidth: '39rem',
@@ -48,6 +78,7 @@ export const Main = () => {
                   />
                </a>
             </Box>
+            {/* POP UP LOGO DIAGONAL  */}
             <Box
                sx={{
                   maxWidth: '80.2rem',
