@@ -4,14 +4,7 @@ import { Main } from './Main'
 
 export const FirstSeasonPage = () => {
    return (
-      <Box
-         sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexDirection: 'column',
-         }}
-      >
+      <Box>
          <Header />
          <Main />
       </Box>

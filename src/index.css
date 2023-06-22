@@ -1,5 +1,10 @@
 html {
    font-size: 62.5%;
+   font-family: '游ゴシック', YuGothic, 'Helvetica', 'ヒラギノ角ゴ ProN W3',
+      'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'Helvetica Neue', Arial,
+      sans-serif;
+
+   /* TODO: MAYBE CHANGE THE FONT FAMILY  */
 }
 
 body {
@@ -7,4 +12,19 @@ body {
    margin: 0;
    border: 0;
    padding: 0;
+}
+@keyframes moveAnimation {
+   0% {
+      transform: translate(0, 0);
+   }
+   100% {
+      transform: translate(0, -5%);
+   }
+}
+
+.bubble {
+   animation: move 24.2s cubic-bezier(0.47, 0, 0.745, 0.715) 9.2s infinite
+      normal;
+   -webkit-animation: move 24.2s cubic-bezier(0.47, 0, 0.745, 0.715) 9.2s
+      infinite normal;
 }
