@@ -4,13 +4,15 @@ import { NewsPreview } from './NewsPreview'
 import { useEffect, useState } from 'react'
 import { Introduction } from './Introduction'
 import { StaffCast } from './StaffCast'
+import { Trailer } from './Trailer'
 
 export const Main = () => {
    const [scrollDistance, setScrollDistance] = useState(0)
    const maxScrollDistance = 1000
    const triggerIntroductionDistance = 1200
    const triggerStaffDistance = 2050
-   const triggerCastDistance = 2550
+   const triggerCastDistance = 2500
+   const triggerTrailerDistance = 3000
 
    useEffect(() => {
       const handleScroll = () => {
@@ -36,6 +38,7 @@ export const Main = () => {
    const introductionAnimated = scrollDistance >= triggerIntroductionDistance // For Introcution aniamted text
    const staffAnimated = scrollDistance >= triggerStaffDistance // For Staff aniamted text
    const castAnimated = scrollDistance >= triggerCastDistance // For Cast aniamted text
+   const trailerAnimated = scrollDistance >= triggerTrailerDistance // For Cast aniamted text
    return (
       <Box
          sx={{
@@ -164,12 +167,14 @@ export const Main = () => {
                <NewsPreview />
             </Box>
          </Box>
+         {/* TODO: FIX BACKGROUND OF INTRODUCTION AND TRAILER  */}
          {/* INTRODUCTION ARTICLE  */}
          <Introduction
             transformValue={transformValueTriangle}
             isAnimated={introductionAnimated}
          />
          <StaffCast staffAnimated={staffAnimated} castAnimated={castAnimated} />
+         <Trailer trailerAnimated={trailerAnimated} />
       </Box>
    )
 }

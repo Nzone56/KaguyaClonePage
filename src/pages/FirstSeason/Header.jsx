@@ -58,7 +58,7 @@ export const Header = () => {
                   </a>
                </li>
                <li style={{ marginLeft: '3.6rem' }}>
-                  <a href="1st/#staff">
+                  <a href="/1st/#staff">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_staff.png"
                         alt="Logo de la empresa"
@@ -82,7 +82,7 @@ export const Header = () => {
                   </a>
                </li>
                <li style={{ marginLeft: '3.6rem' }}>
-                  <a href="1st/#movie">
+                  <a href="/1st/#movie">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_trailer.png"
                         alt="Logo de la empresa"

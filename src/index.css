@@ -7,7 +7,7 @@ html {
    /* TODO: MAYBE CHANGE THE FONT FAMILY  */
 }
 
-body {
+* {
    box-sizing: border-box;
    margin: 0;
    border: 0;

@@ -4,6 +4,7 @@ import { BubbleArea } from './BubbleArea'
 export const StaffCast = ({ staffAnimated, castAnimated }) => {
    return (
       <Box
+         id="staff"
          component="article"
          sx={{
             position: 'relative',
