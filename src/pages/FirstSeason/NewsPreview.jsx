@@ -8,7 +8,7 @@ export const NewsPreview = () => {
          sx={{
             display: 'inline-block',
             position: 'relative',
-            width: '82.5rem',
+            width: '815px',
             padding: '0.4rem',
             border: 'solid 1px #000',
             verticalAlign: 'top',

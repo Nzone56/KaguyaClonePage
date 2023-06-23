@@ -15,6 +15,7 @@ export const NewsItem = ({ date, text, article, lastOne }) => {
                sx={{
                   position: 'relative',
                   padding: '2rem 0',
+                  margin: '0',
                   '&:hover': {
                      '& > div:first-of-type': {
                         textDecoration: 'underline',

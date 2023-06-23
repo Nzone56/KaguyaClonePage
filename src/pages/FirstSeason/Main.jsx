@@ -3,10 +3,14 @@ import { BubbleArea } from './BubbleArea'
 import { NewsPreview } from './NewsPreview'
 import { useEffect, useState } from 'react'
 import { Introduction } from './Introduction'
+import { StaffCast } from './StaffCast'
 
 export const Main = () => {
    const [scrollDistance, setScrollDistance] = useState(0)
    const maxScrollDistance = 1000
+   const triggerIntroductionDistance = 1200
+   const triggerStaffDistance = 2050
+   const triggerCastDistance = 2550
 
    useEffect(() => {
       const handleScroll = () => {
@@ -21,8 +25,17 @@ export const Main = () => {
       }
    }, [])
 
-   const transformValue =
-      scrollDistance <= maxScrollDistance ? `${scrollDistance / 20}px` : '50px'
+   const transformValueImage =
+      scrollDistance <= maxScrollDistance
+         ? `-${scrollDistance / 20}px`
+         : '-50px'
+   // For Main Background image animation
+   const transformValueTriangle = scrollDistance
+      ? `-${scrollDistance / 5}px`
+      : '0px' //For Introduction moving triangles
+   const introductionAnimated = scrollDistance >= triggerIntroductionDistance // For Introcution aniamted text
+   const staffAnimated = scrollDistance >= triggerStaffDistance // For Staff aniamted text
+   const castAnimated = scrollDistance >= triggerCastDistance // For Cast aniamted text
    return (
       <Box
          sx={{
@@ -62,7 +75,7 @@ export const Main = () => {
                      backgroundRepeat: 'no-repeat',
                      transition:
                         'transform .7s ease-out, top 1.5s ease-out .7s',
-                     transform: `translateY(${transformValue})`,
+                     transform: `translateY(${transformValueImage})`,
                      //TODO: ANIMATION FROM SCROLLING DOWN SLOW DOWN, MORE HEIGHT
                   }}
                />
@@ -152,7 +165,11 @@ export const Main = () => {
             </Box>
          </Box>
          {/* INTRODUCTION ARTICLE  */}
-         <Introduction />
+         <Introduction
+            transformValue={transformValueTriangle}
+            isAnimated={introductionAnimated}
+         />
+         <StaffCast staffAnimated={staffAnimated} castAnimated={castAnimated} />
       </Box>
    )
 }

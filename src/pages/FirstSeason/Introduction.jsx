@@ -1,26 +1,9 @@
 import { Box, Typography } from '@mui/material'
 import { useEffect, useState } from 'react'
 
-export const Introduction = () => {
+export const Introduction = ({ transformValue, isAnimated }) => {
    // TODO: MIXIN OR SMTH TO GROPU AND RE-USE ANIMATION CSS
-   const [scrollDistance, setScrollDistance] = useState(0)
-   const triggerDistance = 500
 
-   useEffect(() => {
-      const handleScroll = () => {
-         const scrollTop = window.scrollY || document.documentElement.scrollTop
-         setScrollDistance(scrollTop)
-      }
-
-      window.addEventListener('scroll', handleScroll)
-
-      return () => {
-         window.removeEventListener('scroll', handleScroll)
-      }
-   }, [])
-
-   const transformValue = scrollDistance ? `-${scrollDistance / 5}px` : '0px'
-   const isAnimated = scrollDistance >= triggerDistance
    return (
       <Box
          id="introduction"
@@ -105,7 +88,6 @@ export const Introduction = () => {
                opacity: isAnimated ? '1' : '0',
             }}
          >
-            {' '}
             <img
                src="../../src/assets/FirstSeason/Introduction/title_intro.png"
                alt="Logo de la empresa"
