@@ -6,7 +6,7 @@ import { Introduction } from './Introduction'
 
 export const Main = () => {
    const [scrollDistance, setScrollDistance] = useState(0)
-   const maxScrollDistance = 70
+   const maxScrollDistance = 1000
 
    useEffect(() => {
       const handleScroll = () => {
@@ -22,7 +22,7 @@ export const Main = () => {
    }, [])
 
    const transformValue =
-      scrollDistance <= maxScrollDistance ? `${scrollDistance / 2}px` : '35px'
+      scrollDistance <= maxScrollDistance ? `${scrollDistance / 20}px` : '50px'
    return (
       <Box
          sx={{

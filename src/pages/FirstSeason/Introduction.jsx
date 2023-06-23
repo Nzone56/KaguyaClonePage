@@ -23,7 +23,7 @@ export const Introduction = () => {
    const isAnimated = scrollDistance >= triggerDistance
    return (
       <Box
-         id="Introduction"
+         id="introduction"
          component="article"
          sx={{
             position: 'relative',

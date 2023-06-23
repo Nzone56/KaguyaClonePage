@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export const LandingPage = () => {
    return (
       <Box>
-         <Button component={Link} to="/1st">
+         <Button component={Link} to="/1st/">
             First Season
          </Button>
          <Button> Second Season </Button>
