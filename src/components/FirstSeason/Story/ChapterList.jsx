@@ -1,77 +1,55 @@
 import { Box } from '@mui/material'
 import { ChapterButton } from './ChapterButton'
-import { useState } from 'react'
 
-export const ChapterList = () => {
-   const [activeButton, setActiveButton] = useState('01')
+export const ChapterList = ({ activeButton, setActiveButton }) => {
+   const chapters = [
+      { number: '01', img: [] },
+      { number: '02', img: [] },
+      { number: '03', img: [] },
+      { number: '04', img: [] },
+      { number: '05', img: [] },
+      { number: '06', img: [] },
+      { number: '07', img: [] },
+      { number: '08', img: [] },
+      { number: '09', img: [] },
+      { number: '10', img: [] },
+      { number: '11', img: [] },
+      { number: '12', img: [] },
+   ]
 
    return (
       <Box
-         component="ul"
          sx={{
-            display: 'block',
+            position: 'absolute',
+            top: '51.7%',
+            left: '30px',
+            zIndex: '1',
+            transform: 'translate(0%, -50%)',
+            width: '100px',
          }}
       >
-         <ChapterButton
-            number={'01'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
-         <ChapterButton
-            number={'02'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
-         <ChapterButton
-            number={'03'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
-         <ChapterButton
-            number={'04'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
-         <ChapterButton
-            number={'05'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
-         <ChapterButton
-            number={'06'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
-         <ChapterButton
-            number={'07'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
-         <ChapterButton
-            number={'08'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
-         <ChapterButton
-            number={'09'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
-         <ChapterButton
-            number={'10'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
-         <ChapterButton
-            number={'11'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
-         <ChapterButton
-            number={'12'}
-            activeButton={activeButton}
-            setActiveButton={setActiveButton}
-         />
+         <Box
+            sx={{
+               height: '100%',
+               position: 'relative',
+               zIndex: '1',
+               margin: '0 auto',
+               padding: '0',
+               overflow: 'hidden',
+            }}
+         >
+            <Box component="ul" sx={{ display: 'block' }}>
+               {chapters.map((chapter) => (
+                  <ChapterButton
+                     key={chapter.number}
+                     number={chapter.number}
+                     img={chapter.img}
+                     activeButton={activeButton}
+                     setActiveButton={setActiveButton}
+                  />
+               ))}
+            </Box>
+         </Box>
       </Box>
    )
 }

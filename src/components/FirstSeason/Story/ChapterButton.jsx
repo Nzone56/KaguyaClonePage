@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import { keyframes } from '@emotion/react'
 
 const fade = keyframes`
@@ -98,7 +98,6 @@ export const ChapterButton = ({ number, activeButton, setActiveButton }) => {
                   transformOrigin: 'center',
                   transition: 'transform 1.65s cubic-bezier(.165, .84, .44, 1)',
                   filter: 'brightness(100%)',
-
                   '&:hover': {
                      transform: 'rotate(45deg) scale(1.2)',
                      animation: `${fade} 1.65s cubic-bezier(.165, .84, .44, 1)`,
