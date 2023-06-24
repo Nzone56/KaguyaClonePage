@@ -36,14 +36,12 @@ export const Trailer = ({ trailerAnimated }) => {
             position: 'relative',
             padding: '8.5rem 0',
             backgroundImage: `
-             url(../../src/assets/FirstSeason/Introduction/bg_box.png), 
       url(../../src/assets/FirstSeason/Introduction/bg_pink-line_lt.png),
       url(../../src/assets/FirstSeason/Introduction/bg_pink-line_rb.png),
-          
-      linear-gradient(#000, #000)`,
+        url(../../src/assets/FirstSeason/Introduction/bg_box.png),linear-gradient(#000, #000)`,
 
-            backgroundPosition: 'center center, top left, bottom right',
-            backgroundSize: 'cover, 364px 332px, 832px 170px',
+            backgroundPosition: ' top left, bottom right, center center',
+            backgroundSize: ' 364px 332px, 832px 170px, cover, cover',
             backgroundRepeat: 'no-repeat',
          }}
       >

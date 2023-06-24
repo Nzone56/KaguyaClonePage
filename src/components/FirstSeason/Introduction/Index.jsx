@@ -11,14 +11,12 @@ export const Introduction = ({ transformValue, isAnimated }) => {
             position: 'relative',
             padding: '8.5rem 0',
             backgroundImage: `
-             url(../../src/assets/FirstSeason/Introduction/bg_box.png), 
       url(../../src/assets/FirstSeason/Introduction/bg_pink-line_lt.png),
       url(../../src/assets/FirstSeason/Introduction/bg_pink-line_rb.png),
-          
-      linear-gradient(#000, #000)`,
+        url(../../src/assets/FirstSeason/Introduction/bg_box.png),linear-gradient(#000, #000)`,
 
-            backgroundPosition: 'center center, top left, bottom right',
-            backgroundSize: 'cover, 364px 332px, 832px 170px',
+            backgroundPosition: ' top left, bottom right, center center',
+            backgroundSize: ' 364px 332px, 832px 170px, cover, cover',
             backgroundRepeat: 'no-repeat',
          }}
       >
@@ -117,7 +115,7 @@ export const Introduction = ({ transformValue, isAnimated }) => {
                   height: '80px',
                   transform: isAnimated
                      ? 'translateX(0) translateY(0)'
-                     : 'translateX(-10px)',
+                     : 'translateX(-60px) translateY(60px)',
                   transition: 'all 0.5s cubic-bezier(0.645, 0.045, 0.355, 0)',
                   opacity: isAnimated ? '1' : '0',
                }}
@@ -158,7 +156,7 @@ export const Introduction = ({ transformValue, isAnimated }) => {
                   height: '52px',
                   transform: isAnimated
                      ? 'translateX(0) translateY(0)'
-                     : 'translateX(-10px)',
+                     : 'translateX(60px) translateY(-60px)',
                   transition: 'all 0.5s cubic-bezier(0.645, 0.045, 0.355, 0)',
                   opacity: isAnimated ? '1' : '0',
                }}
