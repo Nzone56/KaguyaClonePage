@@ -29,7 +29,7 @@ export const Header = () => {
                   <a href="1st/news/">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_news.png"
-                        alt="Logo de la empresa"
+                        alt="News"
                      />
                   </a>
                </li>
@@ -37,23 +37,23 @@ export const Header = () => {
                   <a href="/1st/#introduction">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_intro.png"
-                        alt="Logo de la empresa"
+                        alt="Introdcution"
                      />
                   </a>
                </li>
                <li style={{ marginLeft: '3.6rem' }}>
-                  <a href="1st/story/">
+                  <a href="story">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_story.png"
-                        alt="Logo de la empresa"
+                        alt="Story"
                      />
                   </a>
                </li>
                <li style={{ marginLeft: '3.6rem' }}>
-                  <a href="1st/character/">
+                  <a href="character">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_chara.png"
-                        alt="Logo de la empresa"
+                        alt="Characters"
                      />
                   </a>
                </li>
@@ -61,23 +61,23 @@ export const Header = () => {
                   <a href="/1st/#staff">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_staff.png"
-                        alt="Logo de la empresa"
+                        alt="Staff and Cast"
                      />
                   </a>
                </li>
                <li style={{ marginLeft: '3.6rem' }}>
-                  <a href="1st/streaming/">
+                  <a href="streaming">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_streaming.png"
-                        alt="Logo de la empresa"
+                        alt="Streaming"
                      />
                   </a>
                </li>
                <li style={{ marginLeft: '3.6rem' }}>
-                  <a href="1st/bd/">
+                  <a href="bd">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_bd-dvd.png"
-                        alt="Logo de la empresa"
+                        alt="Blue ray and dvd"
                      />
                   </a>
                </li>
@@ -85,7 +85,7 @@ export const Header = () => {
                   <a href="/1st/#movie">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_trailer.png"
-                        alt="Logo de la empresa"
+                        alt="Trailer"
                      />
                   </a>
                </li>
@@ -97,7 +97,7 @@ export const Header = () => {
                   >
                      <img
                         src="../../src/assets/FirstSeason/header/menu_facebook.png"
-                        alt="Logo de la empresa"
+                        alt="Facebook"
                      />
                   </a>
                </li>
