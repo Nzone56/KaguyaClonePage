@@ -1,11 +1,14 @@
-import { Box, keyframes } from '@mui/system'
+import { Box } from '@mui/system'
+import { keyframes } from '@emotion/react'
 
-const moveAnimation = keyframes`
+const move = keyframes`
    0% {
-      transform: translate(0, 0);
+      transform: translateY(0px)
+
    }
    100% {
-      transform: translate(0, -5%);
+      transform: translateY(-2000px);
+      opacity: 0
    }
 `
 
@@ -15,12 +18,10 @@ export const Bubble = ({ position, speed }) => {
          className="bubble"
          sx={{
             position: 'absolute',
-            bottom: '20%',
+            bottom: '-20%',
             left: `${position}%`,
-            animation: `${moveAnimation} ${speed}s cubic-bezier(0.47, 0, 0.745, 0.715) 9.2s infinite normal`,
-            WebkitAnimation: `${moveAnimation} ${speed}s cubic-bezier(0.47, 0, 0.745, 0.715) 9.2s infinite normal`,
+            animation: `${move} ${speed}s cubic-bezier(0.47, 0, 0.745, 0.715) 9.2s infinite normal`,
          }}
-         //TODO: ANIMATION FROM BUBBLE UP
       >
          <span
             style={{

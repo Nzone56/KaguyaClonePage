@@ -182,7 +182,6 @@ export const Main = () => {
                <NewsPreview />
             </Box>
          </Box>
-         {/* TODO: FIX BACKGROUND OF INTRODUCTION AND TRAILER  */}
          {/* INTRODUCTION ARTICLE  */}
          <Introduction
             transformValue={transformValueTriangle}
