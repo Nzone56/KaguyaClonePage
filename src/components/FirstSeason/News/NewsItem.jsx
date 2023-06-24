@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 
-export const NewsItem = ({ date, text, article, lastOne }) => {
+export const NewsPreviewItem = ({ date, text, article, lastOne }) => {
    return (
       <li>
          <a
@@ -76,19 +76,4 @@ export const NewsItem = ({ date, text, article, lastOne }) => {
          </a>
       </li>
    )
-}
-
-{
-   /* <a
-               href={article}
-               target="_blank"
-               rel="noopener noreferrer"
-               style={{
-                  position: 'absolute',
-                  top: '0',
-                  left: '0',
-                  width: '100%',
-                  height: '100%',
-               }}
-            ></a> */
 }

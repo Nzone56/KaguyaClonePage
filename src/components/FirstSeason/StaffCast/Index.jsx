@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import { BubbleArea } from './BubbleArea'
+import { BubbleArea } from '../Animated/BubbleArea'
 
 export const StaffCast = ({ staffAnimated, castAnimated }) => {
    return (

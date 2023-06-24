@@ -1,13 +1,14 @@
 import { Box } from '@mui/material'
-import { BubbleArea } from './BubbleArea'
-import { NewsPreview } from './NewsPreview'
+import { BubbleArea } from './Animated/BubbleArea'
+import { NewsPreview } from './News/NewsPreview'
 import { useEffect, useState } from 'react'
-import { Introduction } from './Introduction'
-import { StaffCast } from './StaffCast'
-import { Trailer } from './Trailer'
+import { Introduction } from './Introduction/Index'
+import { StaffCast } from './StaffCast/Index'
+import { Trailer } from './Trailer/Index'
 
 export const Main = () => {
    const [scrollDistance, setScrollDistance] = useState(0)
+   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
    const maxScrollDistance = 1000
    const triggerIntroductionDistance = 1200
    const triggerStaffDistance = 2050
@@ -26,6 +27,10 @@ export const Main = () => {
          window.removeEventListener('scroll', handleScroll)
       }
    }, [])
+
+   useEffect(() => {
+      setScreenWidth(window.innerWidth)
+   }, [window.innerWidth])
 
    const transformValueImage =
       scrollDistance <= maxScrollDistance
@@ -49,6 +54,7 @@ export const Main = () => {
       >
          {/* MAIN ARTICLE BACKGROUND WITH POP UPS  */}
          <Box
+            id="main"
             component="article"
             sx={{
                position: 'relative',
@@ -59,41 +65,69 @@ export const Main = () => {
             <Box
                sx={{
                   position: 'relative',
-                  width: '100%',
-                  minHeight: '980px',
-                  overflow: 'hidden',
+                  minWidth: '1300px',
+                  margin: '0 auto',
+                  textAlign: 'center',
                }}
             >
-               {/* MAIN BACKGROUND   */}
                <Box
                   sx={{
-                     position: 'absolute',
-                     top: '-153.6px',
-                     left: '0',
+                     position: 'relative',
                      width: '100%',
-                     height: '300%',
-                     backgroundImage:
-                        'url(../../src/assets/FirstSeason/img_main.jpg)',
-                     backgroundSize: '100% auto',
-                     backgroundRepeat: 'no-repeat',
-                     transition:
-                        'transform .7s ease-out, top 1.5s ease-out .7s',
-                     transform: `translateY(${transformValueImage})`,
-                     //TODO: ANIMATION FROM SCROLLING DOWN SLOW DOWN, MORE HEIGHT
-                  }}
-               />
-               {/* POP UP SECOND SEASON  */}
-               <Box
-                  sx={{
-                     maxWidth: '39rem',
-                     position: 'absolute',
-                     top: '1rem',
-                     right: '1rem',
+                     minHeight: '980px',
+                     overflow: 'hidden',
                   }}
                >
-                  <a href="/2nd">
+                  {/* MAIN BACKGROUND   */}
+                  <Box
+                     sx={{
+                        position: 'absolute',
+                        top: `calc(-${screenWidth}px / 8.5)`,
+                        left: '0',
+                        width: '100%',
+                        minHeight: '300%',
+                        backgroundImage:
+                           'url(../../src/assets/FirstSeason/img_main.jpg)',
+                        backgroundSize: '100% auto',
+                        backgroundPosition: 'center top',
+                        backgroundRepeat: 'no-repeat',
+                        transition:
+                           'transform .7s ease-out, top 1.5s ease-out .7s',
+                        transform: `translateY(${transformValueImage})`,
+                     }}
+                  />
+                  {/* POP UP SECOND SEASON  */}
+                  <Box
+                     sx={{
+                        maxWidth: '39rem',
+                        position: 'absolute',
+                        top: '1rem',
+                        right: '1rem',
+                     }}
+                  >
+                     <a href="/2nd">
+                        <img
+                           src="../../src/assets/FirstSeason/bnr_second.jpg"
+                           alt="Logo de la empresa"
+                           style={{
+                              width: '100%',
+                              maxWidth: '100%',
+                              height: 'auto',
+                              display: 'block',
+                           }}
+                        />
+                     </a>
+                  </Box>
+                  {/* POP UP LOGO DIAGONAL  */}
+                  <Box
+                     sx={{
+                        maxWidth: '80.2rem',
+                        position: 'absolute',
+                        top: '64rem',
+                     }}
+                  >
                      <img
-                        src="../../src/assets/FirstSeason/bnr_second.jpg"
+                        src="../../src/assets/FirstSeason/img_main-logo.png"
                         alt="Logo de la empresa"
                         style={{
                            width: '100%',
@@ -102,26 +136,7 @@ export const Main = () => {
                            display: 'block',
                         }}
                      />
-                  </a>
-               </Box>
-               {/* POP UP LOGO DIAGONAL  */}
-               <Box
-                  sx={{
-                     maxWidth: '80.2rem',
-                     position: 'absolute',
-                     top: '64rem',
-                  }}
-               >
-                  <img
-                     src="../../src/assets/FirstSeason/img_main-logo.png"
-                     alt="Logo de la empresa"
-                     style={{
-                        width: '100%',
-                        maxWidth: '100%',
-                        height: 'auto',
-                        display: 'block',
-                     }}
-                  />
+                  </Box>
                </Box>
             </Box>
             {/* BLUE RAY AVALIBLE POP UP  */}

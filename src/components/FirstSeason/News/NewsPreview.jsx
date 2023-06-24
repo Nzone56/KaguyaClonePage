@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import { NewsItem } from './NewsItem'
+import { NewsPreviewItem } from './NewsItem'
 
 export const NewsPreview = () => {
    return (
@@ -8,7 +8,7 @@ export const NewsPreview = () => {
          sx={{
             display: 'inline-block',
             position: 'relative',
-            width: '815px',
+            width: '825px',
             padding: '0.4rem',
             border: 'solid 1px #000',
             verticalAlign: 'top',
@@ -18,7 +18,7 @@ export const NewsPreview = () => {
          <Box
             sx={{
                position: 'relative',
-               height: 'calc(41rem - 6.5rem)',
+               minHeight: '410px',
                padding: '4rem 0 2.5rem',
                background: '#000',
                overflow: 'hidden',
@@ -84,7 +84,7 @@ export const NewsPreview = () => {
                      border: '0',
                   }}
                >
-                  <NewsItem
+                  <NewsPreviewItem
                      date={'01.27.2023'}
                      text={`Kaguya-sama: Love Is War -The First Kiss That Never Ends- In
                   Theaters This Valentine’s Day!`}
@@ -93,7 +93,7 @@ export const NewsPreview = () => {
                      }
                      lastOne={false}
                   />
-                  <NewsItem
+                  <NewsPreviewItem
                      date={'11.20.2022'}
                      text={`Kaguya-sama: Love Is War Event at Anime NYC 2022!`}
                      article={
@@ -101,7 +101,7 @@ export const NewsPreview = () => {
                      }
                      lastOne={false}
                   />
-                  <NewsItem
+                  <NewsPreviewItem
                      date={'11.19.2022'}
                      text={`Kaguya-sama: Love Is War -The First Kiss That Never Ends- Coming February 2023!`}
                      article={
@@ -109,7 +109,7 @@ export const NewsPreview = () => {
                      }
                      lastOne={false}
                   />
-                  <NewsItem
+                  <NewsPreviewItem
                      date={'10.30.2022'}
                      text={`World Premiere Preview Screening at Anime NYC 2022!`}
                      article={

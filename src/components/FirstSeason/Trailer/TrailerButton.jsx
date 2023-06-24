@@ -1,5 +1,4 @@
 import { Box } from '@mui/material'
-import { useState } from 'react'
 
 export const TrailerButton = ({ content, isActive, onClick }) => {
    const handleMouseEnter = (e) => {

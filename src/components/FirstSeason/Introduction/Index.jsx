@@ -1,5 +1,4 @@
 import { Box, Typography } from '@mui/material'
-import { useEffect, useState } from 'react'
 
 export const Introduction = ({ transformValue, isAnimated }) => {
    // TODO: MIXIN OR SMTH TO GROPU AND RE-USE ANIMATION CSS

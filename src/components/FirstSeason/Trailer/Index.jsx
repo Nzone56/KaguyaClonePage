@@ -1,4 +1,4 @@
-import { BubbleArea } from './BubbleArea'
+import { BubbleArea } from '../Animated/BubbleArea'
 import { Box, Typography } from '@mui/material'
 import { TrailerButton } from './TrailerButton'
 import { useEffect, useState } from 'react'
@@ -119,17 +119,17 @@ export const Trailer = ({ trailerAnimated }) => {
                }}
             >
                <TrailerButton
-                  content={' Trailer 1'}
+                  content={'Trailer 1'}
                   isActive={activeButton === 0}
                   onClick={() => handleButtonClick(0)}
                />
                <TrailerButton
-                  content={' Trailer 2 '}
+                  content={'Trailer 2 '}
                   isActive={activeButton === 1}
                   onClick={() => handleButtonClick(1)}
                />
                <TrailerButton
-                  content={' Blu-ray Release'}
+                  content={'Blu-ray Release'}
                   isActive={activeButton === 2}
                   onClick={() => handleButtonClick(2)}
                />
