@@ -42,7 +42,7 @@ export const Header = () => {
                   </a>
                </li>
                <li style={{ marginLeft: '3.6rem' }}>
-                  <a href="story">
+                  <a href="1st/story">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_story.png"
                         alt="Story"
