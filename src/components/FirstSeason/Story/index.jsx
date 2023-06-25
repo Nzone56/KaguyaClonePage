@@ -1,10 +1,27 @@
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import { ChapterList } from './ChapterList'
 import { ChapterBox } from './ChapterBox'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export const Story = () => {
    const [activeButton, setActiveButton] = useState('01')
+   const [scrollDistance, setScrollDistance] = useState(0)
+   useEffect(() => {
+      const handleScroll = () => {
+         const scrollTop = window.scrollY || document.documentElement.scrollTop
+         setScrollDistance(scrollTop)
+      }
+
+      window.addEventListener('scroll', handleScroll)
+
+      return () => {
+         window.removeEventListener('scroll', handleScroll)
+      }
+   }, [])
+   const transformValue = scrollDistance ? `-${scrollDistance / 5}px` : '0px' //For Introduction moving triangles
+   const transformValuePink = scrollDistance
+      ? `${scrollDistance / 20}px`
+      : '0px' //For Introduction moving pink triangles
 
    return (
       <Box
@@ -42,7 +59,145 @@ export const Story = () => {
                   }}
                />
             </Box>
-            {/* TODO: ALL FLOATING THINGS  */}
+            {/* TODO: MAYBE COMPONENT FOR FLOATING  */}
+            {/* FLOATING TRIANGLE 1  */}
+            <Box
+               sx={{
+                  position: 'absolute',
+                  top: '25%',
+                  left: '-10%',
+                  overflow: 'hidden',
+                  transition:
+                     'transform 5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 5s cubic-bezier(0.19, 1, 0.22, 1)',
+                  transform: `translateY(${transformValue})`,
+               }}
+            >
+               <img
+                  src="../../src/assets/FirstSeason/Story/triangle0004.png"
+                  alt="Floating triangle"
+                  style={{
+                     width: '100%',
+                     maxWidth: '100%',
+                     height: 'auto',
+                     display: 'block',
+                  }}
+               />
+            </Box>
+            {/* FLOATING TRIANGLE 2  */}
+            <Box
+               sx={{
+                  position: 'absolute',
+                  top: '45%',
+                  right: '0',
+                  overflow: 'hidden',
+                  transition:
+                     'transform 5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 5s cubic-bezier(0.19, 1, 0.22, 1)',
+                  transform: `translateY(${transformValue})`,
+               }}
+            >
+               <img
+                  src="../../src/assets/FirstSeason/Story/triangle0012.png"
+                  alt="Floating triangle"
+                  style={{
+                     width: '100%',
+                     maxWidth: '100%',
+                     height: 'auto',
+                     display: 'block',
+                  }}
+               />
+            </Box>
+            {/* FLOATING TRIANGLE 3  */}
+            <Box
+               sx={{
+                  position: 'absolute',
+                  bottom: '100px',
+                  left: '-150px',
+                  overflow: 'hidden',
+                  transition:
+                     'transform 5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 5s cubic-bezier(0.19, 1, 0.22, 1)',
+                  transform: `translateY(${transformValue})`,
+               }}
+            >
+               <img
+                  src="../../src/assets/FirstSeason/Introduction/triangle0010.png"
+                  alt="Floating triangle"
+                  style={{
+                     width: '100%',
+                     maxWidth: '100%',
+                     height: 'auto',
+                     display: 'block',
+                  }}
+               />
+            </Box>
+            {/* FLOATING PINK TRIANGLE 1 */}
+            <Box
+               sx={{
+                  position: 'absolute',
+                  top: '25%',
+                  right: '0',
+                  overflow: 'hidden',
+                  transition:
+                     'transform 5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 5s cubic-bezier(0.19, 1, 0.22, 1)',
+                  transform: `translateY(${transformValuePink})`,
+               }}
+            >
+               <img
+                  src="../../src/assets/FirstSeason/Introduction/bg_triangle01-2.png"
+                  alt="Floating triangle"
+                  style={{
+                     width: '100%',
+                     maxWidth: '100%',
+                     height: 'auto',
+                     display: 'block',
+                  }}
+               />
+            </Box>
+            {/* FLOATING PINK TRIANGLE 2 */}
+            <Box
+               sx={{
+                  position: 'absolute',
+                  bottom: '20%',
+                  right: '-50px',
+                  overflow: 'hidden',
+                  transition:
+                     'transform 5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 5s cubic-bezier(0.19, 1, 0.22, 1)',
+                  transform: `translateY(${transformValuePink})`,
+               }}
+            >
+               <img
+                  src="../../src/assets/FirstSeason/Introduction/bg_triangle02-2.png"
+                  alt="Floating triangle"
+                  style={{
+                     width: '100%',
+                     maxWidth: '100%',
+                     height: 'auto',
+                     display: 'block',
+                  }}
+               />
+            </Box>
+            {/* FLOATING PINK TRIANGLE 3 */}
+            <Box
+               sx={{
+                  position: 'absolute',
+                  top: '55%',
+                  left: '55px',
+                  overflow: 'hidden',
+                  transition:
+                     'transform 5s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 5s cubic-bezier(0.19, 1, 0.22, 1)',
+                  transform: `translateY(${transformValuePink})`,
+               }}
+            >
+               <img
+                  src="../../src/assets/FirstSeason/Introduction/bg_triangle02-2.png"
+                  alt="Floating triangle"
+                  style={{
+                     width: '100%',
+                     maxWidth: '100%',
+                     height: 'auto',
+                     display: 'block',
+                  }}
+               />
+            </Box>
             {/* STORY TITTLE */}
             <Box
                sx={{

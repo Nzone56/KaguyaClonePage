@@ -1,13 +1,19 @@
 import { useState, useEffect } from 'react'
 import { Box } from '@mui/material'
 import { keyframes } from '@emotion/react'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
+
+// TODO: FIX ANIMATON
+// TODO: FIX IMAGE CAP
+// TODO: MAYBE CHANGE THE NEXT PREV BUTTONS
 
 const slideAnimation = keyframes`
    0% {
-      left: 0;
+      transform: translateX(0);
    }
    100% {
-      left: -100%;
+      transform: translateX(-100%);
    }
 `
 
@@ -17,7 +23,7 @@ export const ChapterCarousel = ({ activeButton }) => {
    useEffect(() => {
       const timer = setTimeout(() => {
          handleImageChange(currentImage < 3 ? currentImage + 1 : 1)
-      }, 4000)
+      }, 3000)
 
       return () => clearTimeout(timer)
    }, [currentImage])
@@ -90,25 +96,36 @@ export const ChapterCarousel = ({ activeButton }) => {
                display: 'flex',
                justifyContent: 'center',
                marginTop: '20px',
+               fontFamily: 'Kreon, serif',
             }}
          >
-            <button
+            <Box
                onClick={() =>
                   handleImageChange(currentImage > 1 ? currentImage - 1 : 3)
                }
-               style={{
+               sx={{
                   marginRight: '10px',
+                  cursor: 'pointer',
+                  backgroundColor: 'black',
+                  color: '#fff',
+                  padding: '4px',
                }}
             >
-               Previous
-            </button>
-            <button
+               <ArrowBackIcon />
+            </Box>
+            <Box
                onClick={() =>
                   handleImageChange(currentImage < 3 ? currentImage + 1 : 1)
                }
+               sx={{
+                  cursor: 'pointer',
+                  backgroundColor: 'black',
+                  color: '#fff',
+                  padding: '4px',
+               }}
             >
-               Next
-            </button>
+               <ArrowForwardIcon />
+            </Box>
          </Box>
       </Box>
    )

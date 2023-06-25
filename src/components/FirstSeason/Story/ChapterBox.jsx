@@ -2,6 +2,7 @@ import { Box } from '@mui/material'
 import { ChapterCarousel } from './ChapterCarousel'
 import { ChapterText } from './ChapterText'
 
+//TODO: FIX SELECTED BOX OF BIG CHAPTERS(4-11)
 export const ChapterBox = ({ activeButton, setActiveButton }) => {
    return (
       <Box
