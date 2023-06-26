@@ -6,6 +6,7 @@ import { Introduction } from './Introduction/Index'
 import { StaffCast } from './StaffCast/Index'
 import { Trailer } from './Trailer/Index'
 
+//TODO: Animation of render in every page
 export const Main = () => {
    const [scrollDistance, setScrollDistance] = useState(0)
    const [screenWidth, setScreenWidth] = useState(window.innerWidth)

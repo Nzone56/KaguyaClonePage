@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import { NewsPreviewItem } from './NewsItem'
+import { NewsPreviewItem } from './NewsPreviewItem'
 
 export const NewsPreview = () => {
    return (

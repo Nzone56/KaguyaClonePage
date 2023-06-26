@@ -4,6 +4,7 @@ import { TrailerButton } from './TrailerButton'
 import { useEffect, useState } from 'react'
 
 export const Trailer = ({ trailerAnimated }) => {
+   //TODO: TRAILER FROM HEADER BUG
    const [activeButton, setActiveButton] = useState(0)
    const [videoSource, setvideoSource] = useState(
       'https://www.youtube.com/embed/S6p_PjK7naQ?rel=0&autoplay=0'

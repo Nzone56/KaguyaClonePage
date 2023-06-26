@@ -6,6 +6,7 @@ import { FourthSeasonPage } from '../pages/FourthSeason'
 import { LandingPage } from '../pages/LandingPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import { FirstSeasonStoryPage } from '../pages/FirstSeason/Story'
+import { FirstSeasonNewsPage } from '../pages/FirstSeason/News'
 
 const router = createBrowserRouter([
    {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
    {
       path: '/1st/story/',
       element: <FirstSeasonStoryPage />,
+   },
+   {
+      path: '/1st/news/',
+      element: <FirstSeasonNewsPage />,
    },
    {
       path: '/2nd',

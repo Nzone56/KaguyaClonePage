@@ -26,7 +26,7 @@ export const Header = () => {
                }}
             >
                <li style={{ marginLeft: '3.6rem' }}>
-                  <a href="1st/news/">
+                  <a href="/1st/news">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_news.png"
                         alt="News"
@@ -42,7 +42,7 @@ export const Header = () => {
                   </a>
                </li>
                <li style={{ marginLeft: '3.6rem' }}>
-                  <a href="1st/story">
+                  <a href="/1st/story">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_story.png"
                         alt="Story"
@@ -66,7 +66,7 @@ export const Header = () => {
                   </a>
                </li>
                <li style={{ marginLeft: '3.6rem' }}>
-                  <a href="streaming">
+                  <a href="/1st/streaming">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_streaming.png"
                         alt="Streaming"
@@ -74,7 +74,7 @@ export const Header = () => {
                   </a>
                </li>
                <li style={{ marginLeft: '3.6rem' }}>
-                  <a href="bd">
+                  <a href="/1st/bd">
                      <img
                         src="../../src/assets/FirstSeason/header/menu_bd-dvd.png"
                         alt="Blue ray and dvd"

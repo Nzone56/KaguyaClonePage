@@ -1,17 +1,14 @@
 import { Box } from '@mui/material'
 import { Header } from '../../components/FirstSeason/Header'
 import { Footer } from '../../components/FirstSeason/Footer'
-import { Story } from '../../components/FirstSeason/Story/Index'
 import { Background } from '../../components/FirstSeason/Background'
+import { News } from '../../components/FirstSeason/News'
 
-export const FirstSeasonStoryPage = () => {
+export const FirstSeasonNewsPage = () => {
    return (
       <Box>
          <Header />
-         <Background
-            pageComponent={<Story />}
-            title={'Story/title_story.png'}
-         />
+         <Background pageComponent={<News />} title={'News/title_news.png'} />
          <Footer />
       </Box>
    )
