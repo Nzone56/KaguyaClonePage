@@ -7,6 +7,7 @@ import { LandingPage } from '../pages/LandingPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import { FirstSeasonStoryPage } from '../pages/FirstSeason/Story'
 import { FirstSeasonNewsPage } from '../pages/FirstSeason/News'
+import { FirstSeasonStreamingPage } from '../pages/FirstSeason/Streaming'
 
 const router = createBrowserRouter([
    {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
    {
       path: '/1st/news/',
       element: <FirstSeasonNewsPage />,
+   },
+   {
+      path: '/1st/streaming/',
+      element: <FirstSeasonStreamingPage />,
    },
    {
       path: '/2nd',

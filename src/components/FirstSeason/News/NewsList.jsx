@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material'
 import React from 'react'
 
 export const NewsList = ({ news, page }) => {
-   //TODO: idk i ll but put src and create the page for every news
+   //TODO: idk if i ll but put src and create the page for every news
    return (
       <Box component="ul" sx={{ marginBottom: '40px', listStyle: 'none' }}>
          {news[page].map((newpage) => (

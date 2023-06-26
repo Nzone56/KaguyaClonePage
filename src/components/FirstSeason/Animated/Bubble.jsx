@@ -11,7 +11,7 @@ const move = keyframes`
       opacity: 0
    }
 `
-
+//TODO: WHY DELAY
 export const Bubble = ({ position, speed }) => {
    return (
       <Box
