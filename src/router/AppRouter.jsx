@@ -8,6 +8,7 @@ import { NotFoundPage } from '../pages/NotFoundPage'
 import { FirstSeasonStoryPage } from '../pages/FirstSeason/Story'
 import { FirstSeasonNewsPage } from '../pages/FirstSeason/News'
 import { FirstSeasonStreamingPage } from '../pages/FirstSeason/Streaming'
+import { FirstSeasonBluRayPage } from '../pages/FirstSeason/BluRay'
 
 const router = createBrowserRouter([
    {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
    {
       path: '/1st/streaming/',
       element: <FirstSeasonStreamingPage />,
+   },
+   {
+      path: '/1st/bd/',
+      element: <FirstSeasonBluRayPage />,
    },
    {
       path: '/2nd',
