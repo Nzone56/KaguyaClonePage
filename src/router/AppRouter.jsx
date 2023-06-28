@@ -9,6 +9,7 @@ import { FirstSeasonStoryPage } from '../pages/FirstSeason/Story'
 import { FirstSeasonNewsPage } from '../pages/FirstSeason/News'
 import { FirstSeasonStreamingPage } from '../pages/FirstSeason/Streaming'
 import { FirstSeasonBluRayPage } from '../pages/FirstSeason/BluRay'
+import { FirstSeasonCharacterPage } from '../pages/FirstSeason/Character'
 
 const router = createBrowserRouter([
    {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
    {
       path: '/1st/bd/',
       element: <FirstSeasonBluRayPage />,
+   },
+   {
+      path: '/1st/character/',
+      element: <FirstSeasonCharacterPage />,
    },
    {
       path: '/2nd',

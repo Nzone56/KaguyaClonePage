@@ -1,5 +1,16 @@
 import { Box } from '@mui/material'
 import { useEffect, useState } from 'react'
+import { keyframes } from '@emotion/react'
+
+//TODO: CHANGE THE ANIMATION FOR THE WHOLE PAGE
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
 
 export const Background = ({ pageComponent, title }) => {
    const [scrollDistance, setScrollDistance] = useState(0)
@@ -22,7 +33,13 @@ export const Background = ({ pageComponent, title }) => {
 
    return (
       <Box
-         sx={{ position: 'relative', paddingTop: '80px', overflow: 'hidden' }}
+         sx={{
+            position: 'relative',
+            paddingTop: '80px',
+            overflow: 'hidden',
+            opacity: 0,
+            animation: `${fadeIn} 2.3s forwards`,
+         }}
       >
          <Box
             sx={{
