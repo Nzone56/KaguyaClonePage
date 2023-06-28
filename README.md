@@ -1,55 +1,58 @@
-# Clon de Kaguya-sama: Love is War - Página web
+# Kaguya-sama: Love is War Clone - Website
 
-Este es un clon de la página web oficial de Kaguya-sama: Love is War versión Ingles, desarrollado utilizando React, Vite y MUI (Material-UI).
+This is an English version clone of the official Kaguya-sama: Love is War website, developed using React, Vite, and MUI (Material-UI).
 
-Página original clonada:
+Cloned original pages:
 
--  Primera Temporada: https://kaguyasama-anime.com/1st (Faltan detalles)
--  Segunda Temporada: https://kaguyasama-anime.com/2nd (En desarollo)
--  Tercera Temporada: https://kaguyasama-anime.com/3rd (Proximamente)
--  Pelicula / Cuarta Temporada: https://kaguyasama-anime.com (Proximamente)
+-  First Season: [https://kaguyasama-anime.com/1st](https://kaguyasama-anime.com/1st) (Some details are missing)
+-  Second Season: [https://kaguyasama-anime.com/2nd](https://kaguyasama-anime.com/2nd) (Under development)
+-  Third Season: [https://kaguyasama-anime.com/3rd](https://kaguyasama-anime.com/3rd) (Coming soon)
+-  Movie / Fourth Season: [https://kaguyasama-anime.com](https://kaguyasama-anime.com) (Coming soon)
 
-## Descripción
+## Description
 
-Este proyecto es una recreación de la página web oficial de Kaguya-sama: Love is War, una popular serie de anime y manga. La página web clonada incluye varias secciones como la página de inicio, información del anime, personajes, galería de imágenes y más. El objetivo principal de este proyecto es demostrar el uso de tecnologías modernas como React, Vite y MUI para construir una interfaz de usuario atractiva y receptiva. Además de mostrar la comparativa de la evolución de la página a través de sus temporadas ya que cada una presenta un diseño único y característico pero con el mismo aura de la serie
+This project is a recreation of the official Kaguya-sama: Love is War website, a popular anime and manga series. The cloned website includes various sections such as the home page, anime information, characters, image gallery, and more. The main objective of this project is to demonstrate the use of modern technologies like React, Vite, and MUI to build an attractive and responsive user interface. Additionally, it showcases the evolution of the website throughout its seasons, as each one presents a unique and characteristic design while maintaining the essence of the series.
 
-## Capturas de pantalla
+## Project Status
 
-Aquí hay algunas capturas de pantalla de la página web clonada:
+This project is currently in development. The first season is currently available, and a landing page leading to the season selection has been added. Please note that the clone is not 100% exact, as some changes have been made for personal preference. The project is not yet responsive, and some details are yet to be completed (refer to the 'TODO' list).
 
-![Temporada 1 Landing Page ](src/assets/Screenshots/KaguyaS1-01.png)
-![Temporada 1 Character Page ](src/assets/Screenshots/KaguyaS1-Char.png)
-![Temporada 1 Story Page ](src/assets/Screenshots/KaguyaS1-Story.png))
+## Screenshots
 
-## Características
+Here are some screenshots of the cloned website:
 
--  Página de inicio con información general sobre Kaguya-sama: Love is War.
--  Sección de personajes con detalles de los principales personajes del anime.
--  Galería de imágenes con una selección de imágenes promocionales y de los personajes.
--  Página de información del anime con sinopsis y detalles sobre la producción.
--  Diseño receptivo que se adapta a diferentes tamaños de pantalla.
+![Season 1 Landing Page](src/assets/Screenshots/KaguyaS1-01.png)
+![Season 1 Character Page](src/assets/Screenshots/KaguyaS1-Char.png)
+![Season 1 Story Page](src/assets/Screenshots/KaguyaS1-Story.png)
 
-## Tecnologías utilizadas
+## Features
 
--  React: Biblioteca de JavaScript para construir interfaces de usuario.
--  Vite: Herramienta de compilación rápida y flexible para aplicaciones web modernas.
--  MUI (Material-UI): Biblioteca de componentes de interfaz de usuario basada en Material Design.
+-  Home page with general information about Kaguya-sama: Love is War.
+-  Characters section with details of the main anime characters.
+-  Image gallery with a selection of promotional and character images.
+-  Anime information page with synopsis and production details.
 
-## Instalación
+## Technologies Used
 
-1. Clona este repositorio en tu máquina local:
+-  React: JavaScript library for building user interfaces.
+-  Vite: Fast and flexible development build tool for modern web applications.
+-  MUI (Material-UI): UI component library based on Material Design.
+
+## Installation
+
+1. Clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/Nzone56/KaguyaClonePage.git
 ```
 
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
 
 ```bash
 cd KAGUYA-CLONE
 ```
 
-3. Instala las dependencias utilizando npm o yarn:
+3. Install the dependencies using npm or yarn:
 
 ```bash
 npm install
@@ -59,7 +62,7 @@ npm install
 yarn install
 ```
 
-4. Inicia la aplicación:
+4. Start the application:
 
 ```bash
 npm run dev
@@ -69,26 +72,22 @@ npm run dev
 yarn dev
 ```
 
-5. Abre tu navegador y ve a `http://localhost:5173/` para ver la página web clonada de Kaguya-sama: Love is War.
+5. Open your browser and go to http://localhost:5173/ to see the cloned Kaguya-sama: Love is War website.
 
-## Contribución
+## Contribution
 
-Las contribuciones son bienvenidas. Si quieres mejorar este proyecto, siéntete libre de enviar pull requests. Antes de enviar una solicitud, asegúrate de seguir las mejores prácticas y las pautas de estilo de código.
+Contributions are welcome. If you want to improve this project, feel free to send pull requests. Before submitting a request, make sure to follow the best practices and code styling guidelines.
 
-## Licencia
+## License
 
-Este proyecto está bajo la licencia [MIT](LICENSE).
+This project is licensed under the [MIT](LICENSE).
 
 ## Créditos
 
-Este clon de la página web de Kaguya-sama: Love is War fue desarrollado por [Julian Andres Pereira ](https://github.com/Nzone56).
+This clone of the Kaguya-sama: Love is War website was developed by [Julian Andres Pereira ](https://github.com/Nzone56).
 
-Agradecimientos especiales a los creadores originales de [Kaguya-sama: Love is War](https://kaguyasama-anime.com) por la inspiración y los recursos proporcionados.
+Special thanks to the original creators of [Kaguya-sama: Love is War](https://kaguyasama-anime.com) for the inspiration and provided resources.
 
 ## Contacto
 
-Si tienes alguna pregunta o sugerencia relacionada con este proyecto, puedes contactarme a través de mi dirección de correo electrónico: jpereirap@unal.edu.co.
-
-## Estado del proyecto
-
-Este proyecto se encuentra actualmente en desarrollo. Actualmente está disponible la primera temporada y se ha añadido una landing page que lleva a la selección de temporada. Toma en cuenta que el clon no es 100% exacto, ya que se han realizado algunos cambios a gusto personal. El proyecto todavía no es responsive y faltan algunos detalles por completar (Ver la lista de 'TODOS').
+If you have any questions or suggestions related to this project, you can contact me via email at jpereirap@unal.edu.co.
