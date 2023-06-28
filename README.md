@@ -82,7 +82,7 @@ Contributions are welcome. If you want to improve this project, feel free to sen
 
 This project is licensed under the [MIT](LICENSE).
 
-## Créditos
+## Credits
 
 This clone of the Kaguya-sama: Love is War website was developed by [Julian Andres Pereira ](https://github.com/Nzone56).
 
