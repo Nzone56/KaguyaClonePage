@@ -88,6 +88,6 @@ This clone of the Kaguya-sama: Love is War website was developed by [Julian Andr
 
 Special thanks to the original creators of [Kaguya-sama: Love is War](https://kaguyasama-anime.com) for the inspiration and provided resources.
 
-## Contacto
+## Contact
 
 If you have any questions or suggestions related to this project, you can contact me via email at jpereirap@unal.edu.co.
