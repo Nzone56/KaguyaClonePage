@@ -74,20 +74,16 @@ yarn dev
 
 5. Open your browser and go to http://localhost:5173/ to see the cloned Kaguya-sama: Love is War website.
 
-## Contribution
-
-Contributions are welcome. If you want to improve this project, feel free to send pull requests. Before submitting a request, make sure to follow the best practices and code styling guidelines.
-
 ## License
 
 This project is licensed under the [MIT](LICENSE).
 
-## Créditos
+## Credits
 
 This clone of the Kaguya-sama: Love is War website was developed by [Julian Andres Pereira ](https://github.com/Nzone56).
 
 Special thanks to the original creators of [Kaguya-sama: Love is War](https://kaguyasama-anime.com) for the inspiration and provided resources.
 
-## Contacto
+## Contact
 
 If you have any questions or suggestions related to this project, you can contact me via email at jpereirap@unal.edu.co.
