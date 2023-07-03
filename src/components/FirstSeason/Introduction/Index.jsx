@@ -11,9 +11,9 @@ export const Introduction = ({ transformValue, isAnimated }) => {
             position: 'relative',
             padding: '8.5rem 0',
             backgroundImage: `
-      url(../../src/assets/FirstSeason/Introduction/bg_pink-line_lt.png),
-      url(../../src/assets/FirstSeason/Introduction/bg_pink-line_rb.png),
-        url(../../src/assets/FirstSeason/Introduction/bg_box.png),linear-gradient(#000, #000)`,
+      url(../../src/assets/img/FirstSeason/Introduction/bg_pink-line_lt.png),
+      url(../../src/assets/img/FirstSeason/Introduction/bg_pink-line_rb.png),
+        url(../../src/assets/img/FirstSeason/Introduction/bg_box.png),linear-gradient(#000, #000)`,
 
             backgroundPosition: ' top left, bottom right, center center',
             backgroundSize: ' 364px 332px, 832px 170px, cover, cover',
@@ -34,7 +34,7 @@ export const Introduction = ({ transformValue, isAnimated }) => {
             }}
          >
             <img
-               src="../../src/assets/FirstSeason/Introduction/triangle0001.png"
+               src="../../src/assets/img/FirstSeason/Introduction/triangle0001.png"
                alt="Floating triangle"
                style={{
                   width: '100%',
@@ -59,7 +59,7 @@ export const Introduction = ({ transformValue, isAnimated }) => {
             }}
          >
             <img
-               src="../../src/assets/FirstSeason/Introduction/triangle0010.png"
+               src="../../src/assets/img/FirstSeason/Introduction/triangle0010.png"
                alt="Floating triangle"
                style={{
                   width: '100%',
@@ -86,7 +86,7 @@ export const Introduction = ({ transformValue, isAnimated }) => {
             }}
          >
             <img
-               src="../../src/assets/FirstSeason/Introduction/title_intro.png"
+               src="../../src/assets/img/FirstSeason/Introduction/title_intro.png"
                alt="Logo de la empresa"
                style={{
                   width: '100%',
@@ -111,7 +111,7 @@ export const Introduction = ({ transformValue, isAnimated }) => {
                   top: '-100px',
                   right: '-180px',
                   width: '102px',
-                  background: `url("../../src/assets/FirstSeason/Introduction/bg_triangle01-2.png")`,
+                  background: `url("../../src/assets/img/FirstSeason/Introduction/bg_triangle01-2.png")`,
                   height: '80px',
                   transform: isAnimated
                      ? 'translateX(0) translateY(0)'
@@ -135,7 +135,7 @@ export const Introduction = ({ transformValue, isAnimated }) => {
                   sx={{ width: '68rem', margin: '0 auto' }}
                >
                   <img
-                     src="../../src/assets/FirstSeason/Introduction/text_intro.png"
+                     src="../../src/assets/img/FirstSeason/Introduction/text_intro.png"
                      alt="Logo de la empresa"
                      style={{
                         width: '100%',
@@ -152,7 +152,7 @@ export const Introduction = ({ transformValue, isAnimated }) => {
                   bottom: '80px',
                   left: '-180px',
                   width: '66px',
-                  background: `url("../../src/assets/FirstSeason/Introduction/bg_triangle02-2.png")`,
+                  background: `url("../../src/assets/img/FirstSeason/Introduction/bg_triangle02-2.png")`,
                   height: '52px',
                   transform: isAnimated
                      ? 'translateX(0) translateY(0)'

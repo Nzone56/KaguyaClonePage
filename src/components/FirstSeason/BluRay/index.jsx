@@ -48,7 +48,7 @@ export const BluRay = () => {
                <Box sx={{ position: 'relative', minHeight: '730px' }}>
                   <figure style={{ position: 'absolute' }}>
                      <img
-                        src={`../../src/assets/FirstSeason/BluRay/img_pkg_01.jpg`}
+                        src={`../../src/assets/img/FirstSeason/BluRay/img_pkg_01.jpg`}
                         alt="BluRay cover"
                         style={{
                            width: 'auto',
@@ -197,7 +197,7 @@ export const BluRay = () => {
                                  }}
                               >
                                  <img
-                                    src={`../../src/assets/FirstSeason/BluRay/img_pkg01_productshot.jpg`}
+                                    src={`../../src/assets/img/FirstSeason/BluRay/img_pkg01_productshot.jpg`}
                                     alt="Preview product"
                                     style={{
                                        width: 'auto',

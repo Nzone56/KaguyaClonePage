@@ -8,7 +8,8 @@ export const StaffCast = ({ staffAnimated, castAnimated }) => {
          component="article"
          sx={{
             position: 'relative',
-            backgroundImage: 'url(../../src/assets/FirstSeason/bg_pink.gif)',
+            backgroundImage:
+               'url(../../src/assets/img/FirstSeason/bg_pink.gif)',
          }}
       >
          <Box
@@ -34,7 +35,7 @@ export const StaffCast = ({ staffAnimated, castAnimated }) => {
                }}
             >
                <img
-                  src="../../src/assets/FirstSeason/Staff/title_staff.png"
+                  src="../../src/assets/img/FirstSeason/Staff/title_staff.png"
                   alt="Staff Title"
                   style={{
                      width: '100%',
@@ -64,7 +65,7 @@ export const StaffCast = ({ staffAnimated, castAnimated }) => {
                   }}
                >
                   <img
-                     src="../../src/assets/FirstSeason/Staff/text_staff.png"
+                     src="../../src/assets/img/FirstSeason/Staff/text_staff.png"
                      alt="Staff Text"
                      style={{
                         width: '100%',
@@ -90,7 +91,7 @@ export const StaffCast = ({ staffAnimated, castAnimated }) => {
                }}
             >
                <img
-                  src="../../src/assets/FirstSeason/Staff/title_cast.png"
+                  src="../../src/assets/img/FirstSeason/Staff/title_cast.png"
                   alt="Staff Title"
                   style={{
                      width: '100%',
@@ -120,7 +121,7 @@ export const StaffCast = ({ staffAnimated, castAnimated }) => {
                   }}
                >
                   <img
-                     src="../../src/assets/FirstSeason/Staff/text_cast.png"
+                     src="../../src/assets/img/FirstSeason/Staff/text_cast.png"
                      alt="Staff Text"
                      style={{
                         width: '100%',

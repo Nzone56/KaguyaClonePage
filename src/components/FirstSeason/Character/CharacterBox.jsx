@@ -38,7 +38,7 @@ export const CharacterBox = ({ activeButton }) => {
                            }}
                         >
                            <img
-                              src={`../../src/assets/FirstSeason/Character/${activeButton}/img_main01.png`}
+                              src={`../../src/assets/img/FirstSeason/Character/${activeButton}/img_main01.png`}
                               alt={`${activeButton} full image`}
                               style={{
                                  width: '100%',
@@ -73,7 +73,7 @@ export const CharacterBox = ({ activeButton }) => {
                               }}
                            >
                               <img
-                                 src={`../../src/assets/FirstSeason/Character/${activeButton}/img_face01-02.png`}
+                                 src={`../../src/assets/img/FirstSeason/Character/${activeButton}/img_face01-02.png`}
                                  alt={`${activeButton} face`}
                                  style={{
                                     width: '250px',
@@ -96,7 +96,7 @@ export const CharacterBox = ({ activeButton }) => {
                               }}
                            >
                               <img
-                                 src={`../../src/assets/FirstSeason/Character/${activeButton}/img_face01-01.png`}
+                                 src={`../../src/assets/img/FirstSeason/Character/${activeButton}/img_face01-01.png`}
                                  alt={`${activeButton} face`}
                                  style={{
                                     width: '250px',

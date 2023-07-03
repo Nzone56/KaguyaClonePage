@@ -37,9 +37,9 @@ export const Trailer = ({ trailerAnimated }) => {
             position: 'relative',
             padding: '8.5rem 0',
             backgroundImage: `
-      url(../../src/assets/FirstSeason/Introduction/bg_pink-line_lt.png),
-      url(../../src/assets/FirstSeason/Introduction/bg_pink-line_rb.png),
-        url(../../src/assets/FirstSeason/Introduction/bg_box.png),linear-gradient(#000, #000)`,
+      url(../../src/assets/img/FirstSeason/Introduction/bg_pink-line_lt.png),
+      url(../../src/assets/img/FirstSeason/Introduction/bg_pink-line_rb.png),
+        url(../../src/assets/img/FirstSeason/Introduction/bg_box.png),linear-gradient(#000, #000)`,
 
             backgroundPosition: ' top left, bottom right, center center',
             backgroundSize: ' 364px 332px, 832px 170px, cover, cover',
@@ -63,7 +63,7 @@ export const Trailer = ({ trailerAnimated }) => {
             }}
          >
             <img
-               src="../../src/assets/FirstSeason/title_trailer.png"
+               src="../../src/assets/img/FirstSeason/title_trailer.png"
                alt="Logo de la empresa"
                style={{
                   width: '100%',

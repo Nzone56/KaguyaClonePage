@@ -43,10 +43,10 @@ export const NewsButton = ({ number, activeTab, setActiveTab }) => {
                height: '80px',
                margin: 'auto',
                backgroundImage: isActive
-                  ? 'url(../../src/assets/FirstSeason/Story/bg_num_on.png)'
+                  ? 'url(../../src/assets/img/FirstSeason/Story/bg_num_on.png)'
                   : isHovered
-                  ? 'url(../../src/assets/FirstSeason/Story/bg_num_on.png)'
-                  : 'url(../../src/assets/FirstSeason/Story/bg_num_off.png)',
+                  ? 'url(../../src/assets/img/FirstSeason/Story/bg_num_on.png)'
+                  : 'url(../../src/assets/img/FirstSeason/Story/bg_num_off.png)',
                backgroundSize: 'cover',
             }}
          />

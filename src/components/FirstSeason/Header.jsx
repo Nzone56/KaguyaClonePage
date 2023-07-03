@@ -1,17 +1,26 @@
-import { AppBar, Box, Toolbar } from '@mui/material'
+import { AppBar, Box, Toolbar, styled } from '@mui/material'
+
+const StyledLi = styled('li')({
+   marginLeft: '37px',
+   display: 'inline-block',
+   position: 'relative',
+   verticalAlign: 'middle',
+})
+
+const StyledImg = styled('img')({
+   width: '100%',
+   maxWidth: '100%',
+   height: 'auto',
+   display: 'block',
+})
 
 export const Header = () => {
    return (
-      <AppBar
-         sx={{
-            backgroundColor: 'black',
-            height: '8rem',
-         }}
-      >
+      <AppBar sx={{ backgroundColor: 'black', height: '8rem' }}>
          <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <a href="/1st">
-               <img
-                  src="../../src/assets/FirstSeason/header/logo_menu.png"
+               <StyledImg
+                  src="../../src/assets/img/FirstSeason/header/logo_menu.png"
                   alt="Logo de la empresa"
                />
             </a>
@@ -25,82 +34,82 @@ export const Header = () => {
                   alignItems: 'center',
                }}
             >
-               <li style={{ marginLeft: '3.6rem' }}>
+               <StyledLi>
                   <a href="/1st/news">
-                     <img
-                        src="../../src/assets/FirstSeason/header/menu_news.png"
+                     <StyledImg
+                        src="../../src/assets/img/FirstSeason/header/menu_news.png"
                         alt="News"
                      />
                   </a>
-               </li>
-               <li style={{ marginLeft: '3.6rem' }}>
+               </StyledLi>
+               <StyledLi>
                   <a href="/1st/#introduction">
-                     <img
-                        src="../../src/assets/FirstSeason/header/menu_intro.png"
+                     <StyledImg
+                        src="../../src/assets/img/FirstSeason/header/menu_intro.png"
                         alt="Introdcution"
                      />
                   </a>
-               </li>
-               <li style={{ marginLeft: '3.6rem' }}>
+               </StyledLi>
+               <StyledLi>
                   <a href="/1st/story">
-                     <img
-                        src="../../src/assets/FirstSeason/header/menu_story.png"
+                     <StyledImg
+                        src="../../src/assets/img/FirstSeason/header/menu_story.png"
                         alt="Story"
                      />
                   </a>
-               </li>
-               <li style={{ marginLeft: '3.6rem' }}>
+               </StyledLi>
+               <StyledLi>
                   <a href="character">
-                     <img
-                        src="../../src/assets/FirstSeason/header/menu_chara.png"
+                     <StyledImg
+                        src="../../src/assets/img/FirstSeason/header/menu_chara.png"
                         alt="Characters"
                      />
                   </a>
-               </li>
-               <li style={{ marginLeft: '3.6rem' }}>
+               </StyledLi>
+               <StyledLi>
                   <a href="/1st/#staff">
-                     <img
-                        src="../../src/assets/FirstSeason/header/menu_staff.png"
+                     <StyledImg
+                        src="../../src/assets/img/FirstSeason/header/menu_staff.png"
                         alt="Staff and Cast"
                      />
                   </a>
-               </li>
-               <li style={{ marginLeft: '3.6rem' }}>
+               </StyledLi>
+               <StyledLi>
                   <a href="/1st/streaming">
-                     <img
-                        src="../../src/assets/FirstSeason/header/menu_streaming.png"
+                     <StyledImg
+                        src="../../src/assets/img/FirstSeason/header/menu_streaming.png"
                         alt="Streaming"
                      />
                   </a>
-               </li>
-               <li style={{ marginLeft: '3.6rem' }}>
+               </StyledLi>
+               <StyledLi>
                   <a href="/1st/bd">
-                     <img
-                        src="../../src/assets/FirstSeason/header/menu_bd-dvd.png"
+                     <StyledImg
+                        src="../../src/assets/img/FirstSeason/header/menu_bd-dvd.png"
                         alt="Blue ray and dvd"
                      />
                   </a>
-               </li>
-               <li style={{ marginLeft: '3.6rem' }}>
+               </StyledLi>
+               <StyledLi>
                   <a href="/1st/#movie">
-                     <img
-                        src="../../src/assets/FirstSeason/header/menu_trailer.png"
+                     <StyledImg
+                        src="../../src/assets/img/FirstSeason/header/menu_trailer.png"
                         alt="Trailer"
                      />
                   </a>
-               </li>
-               <li style={{ marginLeft: '3.6rem' }}>
+               </StyledLi>
+               <StyledLi>
                   <a
                      href="https://www.facebook.com/kaguyasama.anime"
                      target="_blank"
                      rel="noopener noreferrer"
                   >
-                     <img
-                        src="../../src/assets/FirstSeason/header/menu_facebook.png"
+                     <StyledImg
+                        src="../../src/assets/img/FirstSeason/header/menu_facebook.png"
                         alt="Facebook"
                      />
                   </a>
-               </li>
+               </StyledLi>
             </Box>
          </Toolbar>
       </AppBar>

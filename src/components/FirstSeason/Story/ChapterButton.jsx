@@ -51,10 +51,10 @@ export const ChapterButton = ({ number, activeButton, setActiveButton }) => {
                margin: 'auto',
                transition: 'all 1.65s cubic-bezier(.165, .84, .44, 1)',
                backgroundImage: isActive
-                  ? 'url(../../src/assets/FirstSeason/Story/bg_num_on.png)'
+                  ? 'url(../../src/assets/img/FirstSeason/Story/bg_num_on.png)'
                   : isHovered
-                  ? 'url(../../src/assets/FirstSeason/Story/bg_num_on.png)'
-                  : 'url(../../src/assets/FirstSeason/Story/bg_num_off.png)',
+                  ? 'url(../../src/assets/img/FirstSeason/Story/bg_num_on.png)'
+                  : 'url(../../src/assets/img/FirstSeason/Story/bg_num_off.png)',
                backgroundSize: 'cover',
             }}
          />

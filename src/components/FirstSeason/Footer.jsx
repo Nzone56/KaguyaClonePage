@@ -32,7 +32,7 @@ export const Footer = () => {
             }}
          >
             <img
-               src="../../src/assets/FirstSeason/Footer/btn_pagetop.png"
+               src="../../src/assets/img/FirstSeason/Footer/btn_pagetop.png"
                alt="Footer botton"
                style={{
                   width: '100%',
@@ -53,7 +53,7 @@ export const Footer = () => {
             <Box sx={{ marginBottom: '45px' }}>
                <p style={{ width: '88px', margin: '0 auto 20px' }}>
                   <img
-                     src="../../src/assets/FirstSeason/Footer/title_share.png"
+                     src="../../src/assets/img/FirstSeason/Footer/title_share.png"
                      alt="Footer botton"
                      style={{
                         width: '100%',
@@ -85,7 +85,7 @@ export const Footer = () => {
                         target={'_blank'}
                      >
                         <img
-                           src="../../src/assets/FirstSeason/Footer/btn_share-twitter.png"
+                           src="../../src/assets/img/FirstSeason/Footer/btn_share-twitter.png"
                            alt="Footer botton"
                            style={{
                               width: '100%',
@@ -113,7 +113,7 @@ export const Footer = () => {
                         target={'_blank'}
                      >
                         <img
-                           src="../../src/assets/FirstSeason/Footer/btn_share-facebook.png"
+                           src="../../src/assets/img/FirstSeason/Footer/btn_share-facebook.png"
                            alt="Footer botton"
                            style={{
                               width: '100%',

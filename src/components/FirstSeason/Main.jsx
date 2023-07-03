@@ -88,7 +88,7 @@ export const Main = () => {
                         width: '100%',
                         minHeight: '300%',
                         backgroundImage:
-                           'url(../../src/assets/FirstSeason/img_main.jpg)',
+                           'url(../../src/assets/img/FirstSeason/img_main.jpg)',
                         backgroundSize: '100% auto',
                         backgroundPosition: 'center top',
                         backgroundRepeat: 'no-repeat',
@@ -108,7 +108,7 @@ export const Main = () => {
                   >
                      <a href="/2nd">
                         <img
-                           src="../../src/assets/FirstSeason/bnr_second.jpg"
+                           src="../../src/assets/img/FirstSeason/bnr_second.jpg"
                            alt="Logo de la empresa"
                            style={{
                               width: '100%',
@@ -128,7 +128,7 @@ export const Main = () => {
                      }}
                   >
                      <img
-                        src="../../src/assets/FirstSeason/img_main-logo.png"
+                        src="../../src/assets/img/FirstSeason/img_main-logo.png"
                         alt="Logo de la empresa"
                         style={{
                            width: '100%',
@@ -152,7 +152,7 @@ export const Main = () => {
                }}
             >
                <img
-                  src="../../src/assets/FirstSeason/text_onair.png"
+                  src="../../src/assets/img/FirstSeason/text_onair.png"
                   alt="On Air"
                   style={{
                      width: '100%',
@@ -168,7 +168,8 @@ export const Main = () => {
             component="article"
             sx={{
                position: 'relative',
-               backgroundImage: 'url(../../src/assets/FirstSeason/bg_pink.gif)',
+               backgroundImage:
+                  'url(../../src/assets/img/FirstSeason/bg_pink.gif)',
             }}
          >
             <Box

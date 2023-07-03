@@ -26,7 +26,7 @@ export const Streaming = () => {
                style={{ width: '620px', margin: '0 auto 20px' }}
             >
                <img
-                  src={`../../src/assets/FirstSeason/Streaming/cap_onair.png`}
+                  src={`../../src/assets/img/FirstSeason/Streaming/cap_onair.png`}
                   alt="Floating triangle"
                   style={{
                      width: 'auto',
@@ -40,7 +40,7 @@ export const Streaming = () => {
                <center>
                   <a href="https://www.crunchyroll.com/" target="_blank">
                      <img
-                        src={`../../src/assets/FirstSeason/Streaming/crunchyroll.png`}
+                        src={`../../src/assets/img/FirstSeason/Streaming/crunchyroll.png`}
                         alt="Floating triangle"
                         style={{
                            width: '282px',
@@ -52,7 +52,7 @@ export const Streaming = () => {
                   </a>
                   <a href="https://www.hulu.com/welcome" target="_blank">
                      <img
-                        src={`../../src/assets/FirstSeason/Streaming/hulu.png`}
+                        src={`../../src/assets/img/FirstSeason/Streaming/hulu.png`}
                         alt="Floating triangle"
                         style={{
                            width: '282px',
@@ -64,7 +64,7 @@ export const Streaming = () => {
                   </a>
                   <a href="http://www.funimationnow.com/" target="_blank">
                      <img
-                        src={`../../src/assets/FirstSeason/Streaming/funimation.png`}
+                        src={`../../src/assets/img/FirstSeason/Streaming/funimation.png`}
                         alt="Floating triangle"
                         style={{
                            width: '282px',

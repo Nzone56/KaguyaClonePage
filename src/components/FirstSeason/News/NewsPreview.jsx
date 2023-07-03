@@ -33,7 +33,7 @@ export const NewsPreview = () => {
                   }}
                >
                   <img
-                     src="../../src/assets/FirstSeason/title_news.png"
+                     src="../../src/assets/img/FirstSeason/title_news.png"
                      alt="News Title"
                      style={{
                         display: 'block',
@@ -61,7 +61,7 @@ export const NewsPreview = () => {
                >
                   <a href="/news/">
                      <img
-                        src="../../src/assets/FirstSeason/btn_news-more.png"
+                        src="../../src/assets/img/FirstSeason/btn_news-more.png"
                         alt="More news"
                      />
                   </a>

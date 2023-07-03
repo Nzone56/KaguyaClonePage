@@ -1,10 +1,12 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { FirstSeasonPage } from '../pages/FirstSeason'
-import { SecondSeasonPage } from '../pages/SecondSeason'
-import { ThirdSeasonPage } from '../pages/ThirdSeason'
-import { FourthSeasonPage } from '../pages/FourthSeason'
-import { LandingPage } from '../pages/LandingPage'
-import { NotFoundPage } from '../pages/NotFoundPage'
+import {
+   FirstSeasonPage,
+   SecondSeasonPage,
+   ThirdSeasonPage,
+   FourthSeasonPage,
+   LandingPage,
+   NotFoundPage,
+} from '../pages'
 import { FirstSeasonStoryPage } from '../pages/FirstSeason/Story'
 import { FirstSeasonNewsPage } from '../pages/FirstSeason/News'
 import { FirstSeasonStreamingPage } from '../pages/FirstSeason/Streaming'

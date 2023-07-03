@@ -30,7 +30,7 @@ export const Bubble = ({ position, speed }) => {
                width: '3rem',
                height: '3rem',
                backgroundImage:
-                  'url(../../src/assets/FirstSeason/bg_hearts2.png)',
+                  'url(../../src/assets/img/FirstSeason/bg_hearts2.png)',
                backgroundSize: 'contain',
             }}
          ></span>

@@ -37,7 +37,8 @@ export const ChapterCarousel = ({ activeButton }) => {
          sx={{
             position: 'relative',
             padding: '40px 0',
-            backgroundImage: 'url(../../src/assets/FirstSeason/bg_pink.gif)',
+            backgroundImage:
+               'url(../../src/assets/img/FirstSeason/bg_pink.gif)',
          }}
       >
          <Box
@@ -59,7 +60,7 @@ export const ChapterCarousel = ({ activeButton }) => {
                }}
             >
                <img
-                  src={`../../src/assets/FirstSeason/Story/${activeButton}/${currentImage
+                  src={`../../src/assets/img/FirstSeason/Story/${activeButton}/${currentImage
                      .toString()
                      .padStart(2, '0')}.jpg`}
                   alt={`Image ${currentImage}`}
@@ -72,7 +73,7 @@ export const ChapterCarousel = ({ activeButton }) => {
                   }}
                />
                <img
-                  src={`../../src/assets/FirstSeason/Story/${activeButton}/${
+                  src={`../../src/assets/img/FirstSeason/Story/${activeButton}/${
                      currentImage === 3
                         ? '01'
                         : (currentImage + 1).toString().padStart(2, '0')

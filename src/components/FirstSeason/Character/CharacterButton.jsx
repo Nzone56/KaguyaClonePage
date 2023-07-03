@@ -95,7 +95,7 @@ export const CharacterButton = ({ name, activeButton, setActiveButton }) => {
                   }}
                >
                   <img
-                     src={`../../src/assets/FirstSeason/Character/${name}/thumb_chara01.png`}
+                     src={`../../src/assets/img/FirstSeason/Character/${name}/thumb_chara01.png`}
                      alt={`${name} button`}
                      style={{
                         width: '100%',

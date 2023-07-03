@@ -12,18 +12,18 @@ html {
    padding: 0;
 }
 
-@keyframes moveAnimation {
-   0% {
-      transform: translate(0, 0);
-   }
-   100% {
-      transform: translate(0, -5%);
-   }
+@font-face {
+   font-family: 'Big John Light';
+   src: local('BigJohnPRO-Light'),
+      url('./assets/fonts/BigJohnPRO-Light.otf') format('opentype');
 }
-
-.bubble {
-   animation: move 24.2s cubic-bezier(0.47, 0, 0.745, 0.715) 9.2s infinite
-      normal;
-   -webkit-animation: move 24.2s cubic-bezier(0.47, 0, 0.745, 0.715) 9.2s
-      infinite normal;
+@font-face {
+   font-family: 'Big John Bold';
+   src: local('BigJohnPRO-Bold'),
+      url('./assets/fonts/BigJohnPRO-Bold.otf') format('opentype');
+}
+@font-face {
+   font-family: 'Big John Regular';
+   src: local('BigJohnPRO-Regular'),
+      url('./assets/fonts/BigJohnPRO-Regular.otf') format('opentype');
 }

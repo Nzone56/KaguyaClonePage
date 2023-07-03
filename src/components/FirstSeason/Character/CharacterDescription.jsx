@@ -33,7 +33,7 @@ export const CharacterDescription = ({ activeButton }) => {
       >
          <Box>
             <img
-               src={`../../src/assets/FirstSeason/Character/${activeButton}/text_name01.png`}
+               src={`../../src/assets/img/FirstSeason/Character/${activeButton}/text_name01.png`}
                alt={`${activeButton} face`}
                style={{
                   width: '100%',

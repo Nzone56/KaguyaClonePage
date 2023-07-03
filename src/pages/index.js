@@ -1,0 +1,6 @@
+export { FirstSeasonPage } from '../pages/FirstSeason'
+export { SecondSeasonPage } from '../pages/SecondSeason'
+export { ThirdSeasonPage } from '../pages/ThirdSeason'
+export { FourthSeasonPage } from '../pages/FourthSeason'
+export { LandingPage } from '../pages/LandingPage'
+export { NotFoundPage } from '../pages/NotFoundPage'

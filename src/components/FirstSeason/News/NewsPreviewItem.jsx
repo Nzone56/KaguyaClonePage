@@ -65,7 +65,7 @@ export const NewsPreviewItem = ({ date, text, article, lastOne }) => {
                         width: '100%',
                         height: '1px',
                         backgroundImage:
-                           'url(../../src/assets/FirstSeason/dot_pink.png)',
+                           'url(../../src/assets/img/FirstSeason/dot_pink.png)',
                         backgroundRepeat: 'repeat-x',
                      }}
                   />

@@ -50,7 +50,7 @@ export const Background = ({ pageComponent, title }) => {
                width: '100%',
                height: '100%',
                backgroundImage:
-                  'url(../../src/assets/FirstSeason/Introduction/bg_box.png), linear-gradient(#000, #000) ',
+                  'url(../../src/assets/img/FirstSeason/Introduction/bg_box.png), linear-gradient(#000, #000) ',
                backgroundPosition: 'left center',
                backgroundSize: 'cover',
             }}
@@ -63,7 +63,7 @@ export const Background = ({ pageComponent, title }) => {
          >
             <Box sx={{ position: 'absolute', top: '0', left: '0' }}>
                <img
-                  src="../../src/assets/FirstSeason/Introduction/bg_pink-line_lt.png"
+                  src="../../src/assets/img/FirstSeason/Introduction/bg_pink-line_lt.png"
                   alt="Floating triangle"
                   style={{
                      width: '100%',
@@ -87,7 +87,7 @@ export const Background = ({ pageComponent, title }) => {
                }}
             >
                <img
-                  src="../../src/assets/FirstSeason/Story/triangle0004.png"
+                  src="../../src/assets/img/FirstSeason/Story/triangle0004.png"
                   alt="Floating triangle"
                   style={{
                      width: '100%',
@@ -110,7 +110,7 @@ export const Background = ({ pageComponent, title }) => {
                }}
             >
                <img
-                  src="../../src/assets/FirstSeason/Story/triangle0012.png"
+                  src="../../src/assets/img/FirstSeason/Story/triangle0012.png"
                   alt="Floating triangle"
                   style={{
                      width: '100%',
@@ -133,7 +133,7 @@ export const Background = ({ pageComponent, title }) => {
                }}
             >
                <img
-                  src="../../src/assets/FirstSeason/Introduction/triangle0010.png"
+                  src="../../src/assets/img/FirstSeason/Introduction/triangle0010.png"
                   alt="Floating triangle"
                   style={{
                      width: '100%',
@@ -156,7 +156,7 @@ export const Background = ({ pageComponent, title }) => {
                }}
             >
                <img
-                  src="../../src/assets/FirstSeason/Introduction/bg_triangle01-2.png"
+                  src="../../src/assets/img/FirstSeason/Introduction/bg_triangle01-2.png"
                   alt="Floating triangle"
                   style={{
                      width: '100%',
@@ -179,7 +179,7 @@ export const Background = ({ pageComponent, title }) => {
                }}
             >
                <img
-                  src="../../src/assets/FirstSeason/Introduction/bg_triangle02-2.png"
+                  src="../../src/assets/img/FirstSeason/Introduction/bg_triangle02-2.png"
                   alt="Floating triangle"
                   style={{
                      width: '100%',
@@ -202,7 +202,7 @@ export const Background = ({ pageComponent, title }) => {
                }}
             >
                <img
-                  src="../../src/assets/FirstSeason/Introduction/bg_triangle02-2.png"
+                  src="../../src/assets/img/FirstSeason/Introduction/bg_triangle02-2.png"
                   alt="Floating triangle"
                   style={{
                      width: '100%',
@@ -229,7 +229,7 @@ export const Background = ({ pageComponent, title }) => {
                   }}
                >
                   <img
-                     src={`../../src/assets/FirstSeason/${title}`}
+                     src={`../../src/assets/img/FirstSeason/${title}`}
                      alt="Floating triangle"
                      style={{
                         width: 'auto',
