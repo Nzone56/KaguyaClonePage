@@ -2,7 +2,7 @@ import { Box } from '@mui/material'
 
 export const NavigationItem = ({ label, isActive, href }) => {
    return (
-      <li sx={{ marginBottom: '7px' }}>
+      <li style={{ marginBottom: '7px' }}>
          <a
             href={href}
             style={{

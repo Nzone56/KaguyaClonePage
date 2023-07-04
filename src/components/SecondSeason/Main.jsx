@@ -1,6 +1,7 @@
-import { Box, Button, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import { Background } from './Background'
 import { NavigationBar } from './NavigationBar'
+import { Top } from './Top'
 
 export const Main = () => {
    return (
@@ -10,12 +11,12 @@ export const Main = () => {
             position: 'relative',
             width: '100%',
             overflow: 'hidden',
-            height: '100vh',
          }}
       >
          <Background />
          <Box sx={{ position: 'relative', display: 'block' }}>
             <NavigationBar />
+            <Top />
          </Box>
       </Box>
    )

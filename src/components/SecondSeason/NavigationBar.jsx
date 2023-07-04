@@ -16,6 +16,7 @@ export const NavigationBar = () => {
             paddingBottom: '180px',
             width: '0',
             height: '600px',
+            boxSizing: 'content-box',
          }}
       >
          <Box sx={{ position: 'relative' }}>
