@@ -25,7 +25,7 @@ Here are some screenshots of the cloned website:
 
 <br>
 
-![Season 1 Landing Page](src/assets/img/Screenshots/Landing.png)
+![Season 1 Landing Page](src/assets/img/Screenshots/landing.png)
 
 ### Season 1 Page
 
