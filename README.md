@@ -7,7 +7,7 @@ Cloned original pages:
 -  First Season: [https://kaguyasama-anime.com/1st](https://kaguyasama-anime.com/1st) (Some details are missing)
 -  Second Season: [https://kaguyasama-anime.com/2nd](https://kaguyasama-anime.com/2nd) (Under development)
 -  Third Season: [https://kaguyasama-anime.com/3rd](https://kaguyasama-anime.com/3rd) (Coming soon)
--  Movie / Fourth Season: [https://kaguyasama-anime.com](https://kaguyasama-anime.com) (Coming soon)
+-  Movie: [https://kaguyasama-anime.com](https://kaguyasama-anime.com) (Coming soon)
 
 ## Description
 

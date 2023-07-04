@@ -3,7 +3,6 @@ import {
    FirstSeasonPage,
    SecondSeasonPage,
    ThirdSeasonPage,
-   FourthSeasonPage,
    LandingPage,
    NotFoundPage,
 } from '../pages'
@@ -12,6 +11,7 @@ import { FirstSeasonNewsPage } from '../pages/FirstSeason/News'
 import { FirstSeasonStreamingPage } from '../pages/FirstSeason/Streaming'
 import { FirstSeasonBluRayPage } from '../pages/FirstSeason/BluRay'
 import { FirstSeasonCharacterPage } from '../pages/FirstSeason/Character'
+import { MoviePage } from '../pages/Movie'
 
 const router = createBrowserRouter([
    {
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
    },
    {
       path: '/movie',
-      element: <FourthSeasonPage />,
+      element: <MoviePage />,
    },
    {
       path: '*',

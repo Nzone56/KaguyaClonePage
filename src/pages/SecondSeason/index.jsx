@@ -1,3 +1,5 @@
+import { Main } from '../../components/SecondSeason/Main'
+
 export const SecondSeasonPage = () => {
-   return <div>SecondSeasonPage</div>
+   return <Main />
 }
