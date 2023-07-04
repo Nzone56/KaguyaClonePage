@@ -1,12 +1,5 @@
 import { Box, Typography } from '@mui/material'
 import { SideBarButton } from './SideBarButton'
-import { keyframes } from '@emotion/react'
-const fade = keyframes`
-   0% { opacity: 0; }
-   25% { opacity: 1; }
-   75% { opacity: 1; }
-   100% { opacity: 0; }
-`
 
 const styles = {
    title1: {
@@ -40,9 +33,10 @@ export const SideBar = ({ season, setSeason }) => {
             justifyContent: 'space-between',
             flexDirection: 'column',
             boxShadow: '20px 0px 45px 30px rgba(0,0,0,0.75)',
+            zIndex: '1',
          }}
       >
-         <Box sx={{ animation: `${fade} 1.5s linear` }}>
+         <Box>
             <img
                src={`../../src/assets/img/Landing/${season}-cover.jpg`}
                alt="Season Cover"
@@ -51,7 +45,6 @@ export const SideBar = ({ season, setSeason }) => {
                   maxWidth: '100%',
                   height: 'auto',
                   display: 'block',
-                  animation: `${fade} 2.5s linear`,
                }}
             />
             <Box sx={{ backgroundColor: '#fff' }}>
@@ -70,7 +63,7 @@ export const SideBar = ({ season, setSeason }) => {
          </Box>
          <Box component="ul" style={{ listStyle: 'none' }}>
             <SideBarButton
-               id={'1'}
+               id={'first'}
                styles={styles}
                title={'1 SEASON'}
                color={'#ec1f23'}
@@ -79,7 +72,7 @@ export const SideBar = ({ season, setSeason }) => {
                setSeason={setSeason}
             />
             <SideBarButton
-               id={'2'}
+               id={'second'}
                styles={styles}
                title={'2 SEASON'}
                color={'#ec1f23'}
@@ -88,7 +81,7 @@ export const SideBar = ({ season, setSeason }) => {
                setSeason={setSeason}
             />
             <SideBarButton
-               id={'3'}
+               id={'third'}
                styles={styles}
                title={'3 SEASON'}
                color={'#ed1848'}
@@ -97,7 +90,7 @@ export const SideBar = ({ season, setSeason }) => {
                setSeason={setSeason}
             />
             <SideBarButton
-               id={'4'}
+               id={'movie'}
                styles={styles}
                title={'MOVIE'}
                color={'#e71850'}

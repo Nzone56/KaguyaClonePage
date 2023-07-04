@@ -21,9 +21,19 @@ This project is currently in development. The first season is currently availabl
 
 Here are some screenshots of the cloned website:
 
-![Season 1 Landing Page](src/assets/Screenshots/KaguyaS1-01.png)
-![Season 1 Character Page](src/assets/Screenshots/KaguyaS1-Char.png)
-![Season 1 Story Page](src/assets/Screenshots/KaguyaS1-Story.png)
+### Landing Page
+
+<br>
+
+![Season 1 Landing Page](src/assets/img/Screenshots/Landing.png)
+
+### Season 1 Page
+
+<br>
+
+![Season 1 Landing Page](src/assets/img/Screenshots/KaguyaS1-01.png)
+![Season 1 Character Page](src/assets/img/Screenshots/KaguyaS1-Char.png)
+![Season 1 Story Page](src/assets/img/Screenshots/KaguyaS1-Story.png)
 
 ## Features
 

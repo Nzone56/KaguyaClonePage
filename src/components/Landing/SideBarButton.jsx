@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Box, Typography } from '@mui/material'
-
 import { keyframes } from '@emotion/react'
+
 const fade = keyframes`
    0% {
       opacity:0
@@ -69,6 +69,3 @@ export const SideBarButton = ({
       </Box>
    )
 }
-// ;<a href={href} style={{ textDecoration: 'none' }}>
-//    {hoverContent}
-// </a>

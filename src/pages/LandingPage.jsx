@@ -1,10 +1,22 @@
 import { Box } from '@mui/material'
 import { SideBar } from '../components/Landing/SideBar'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { SeasonPreview } from '../components/Landing/SeasonPreview'
+import { keyframes } from '@emotion/react'
+
+const fade = keyframes`
+   0% {
+      opacity:0
+
+   }
+   100% {
+      opacity: 1
+   }
+`
 
 export const LandingPage = () => {
-   const [season, setSeason] = useState('1')
+   //TODO: THE CHANGE BETWEEN SEASONS ITS TOO HARSH
+   const [season, setSeason] = useState('first')
 
    return (
       <Box
@@ -12,10 +24,11 @@ export const LandingPage = () => {
             width: '100vw',
             height: '100vh',
             display: 'flex',
+            animation: `${fade} 1.5s linear`,
          }}
       >
          <SideBar season={season} setSeason={setSeason} />
-         <SeasonPreview />
+         <SeasonPreview season={season} />
       </Box>
    )
 }
